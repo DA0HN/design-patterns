@@ -7,7 +7,7 @@ import java.util.Map;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class Store {
+class Store {
 
 
     private static final Map<String, User> STORAGE = new HashMap<>();

@@ -6,7 +6,7 @@ import java.io.IOException;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class Main {
+class Main {
 
     private static final String VALID_USER_JSON =
             """

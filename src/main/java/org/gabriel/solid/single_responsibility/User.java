@@ -6,7 +6,7 @@ import java.util.Objects;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class User {
+class User {
     private String name;
     private String email;
     private String address;
