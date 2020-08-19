@@ -4,21 +4,22 @@ package org.gabriel.solid.liskov_substitution;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-class Square extends Rectangle {
+class Square implements Shape {
+
+    private int side;
+
     public Square(int side) {
-        super(side, side);
+        this.side = side;
     }
 
-    @Override public void setWidth(int width) {
-        setSide(width);
+    public int getSide() {
+        return side;
     }
-
-    @Override public void setHeight(int height) {
-        setSide(height);
-    }
-
     public void setSide(int side) {
-        super.setHeight(side);
-        super.setWidth(side);
+        this.side = side;
+    }
+
+    @Override public int computeArea() {
+        return side*side;
     }
 }

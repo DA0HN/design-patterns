@@ -4,7 +4,7 @@ package org.gabriel.solid.liskov_substitution;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-class Rectangle {
+class Rectangle implements Shape {
     private int width;
     private int height;
 
@@ -29,7 +29,7 @@ class Rectangle {
         this.height = height;
     }
 
-    public int computeArea() {
-        return width*height;
+    @Override public int computeArea() {
+        return width * height;
     }
 }
