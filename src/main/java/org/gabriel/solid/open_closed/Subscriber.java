@@ -6,7 +6,7 @@ package org.gabriel.solid.open_closed;
  */
 
 // Base class - closed for modification open for extension
-public abstract class Subscriber {
+abstract class Subscriber {
     protected Long subscriberId;
     protected String address;
     protected Long phoneNumber;

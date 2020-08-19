@@ -11,7 +11,7 @@ import java.util.Map;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class CallHistory {
+class CallHistory {
 
     public static class Call {
 

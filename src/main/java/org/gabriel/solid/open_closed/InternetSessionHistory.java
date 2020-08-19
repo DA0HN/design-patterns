@@ -11,7 +11,7 @@ import java.util.Map;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class InternetSessionHistory {
+class InternetSessionHistory {
     public static class InternetSession {
         private final LocalDateTime begin;
         private final Long subscriberId;

@@ -6,7 +6,7 @@ import java.util.List;
  * @author daohn on 19/08/2020
  * @project design-pattern-course
  */
-public class ISPSubscriber extends Subscriber {
+class ISPSubscriber extends Subscriber {
 
     private final long freeUsage;
 
