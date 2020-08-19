@@ -1,0 +1,116 @@
+{
+  "boolean": {
+    "message": "This is a message",
+    "timeStamp": {
+      "nano": 381204000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  },
+  "batata": {
+    "message": "316yrgs",
+    "timeStamp": {
+      "nano": 866317000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  },
+  "fag": {
+    "message": "1564hwrsg36",
+    "timeStamp": {
+      "nano": 889407000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  },
+  "mesgdagasage": {
+    "message": "153467",
+    "timeStamp": {
+      "nano": 907737000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  },
+  "hsfhj": {
+    "message": "rw26yu2524",
+    "timeStamp": {
+      "nano": 924588000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  },
+  "sfh": {
+    "message": "6843uj3h2451",
+    "timeStamp": {
+      "nano": 945396000,
+      "year": 2020,
+      "monthValue": 8,
+      "dayOfMonth": 19,
+      "hour": 21,
+      "minute": 8,
+      "second": 39,
+      "dayOfWeek": "WEDNESDAY",
+      "dayOfYear": 232,
+      "month": "AUGUST",
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    }
+  }
+}
