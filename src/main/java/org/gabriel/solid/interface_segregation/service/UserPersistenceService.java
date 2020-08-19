@@ -33,7 +33,7 @@ public class UserPersistenceService implements PersistenceService<User> {
         }
     }
 
-    @Override public List<User> findByName(String name) {
+    public List<User> findByName(String name) {
         synchronized(USERS) {
             return USERS.values()
                     .stream()
