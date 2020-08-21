@@ -11,7 +11,8 @@ public class Main {
     public static void main(String[] args) {
         var message = new Message("This is a message");
         var printer = new MessagePrinter();
-        try(var writer = new PrintWriter("src/main/resources/test_msg.json")) {
+        try(var writer =
+                    new PrintWriter("dependency_inversion/src/main/resources/test_msg.json")) {
             printer.writeMessage(message, new JSONFormatter(), writer);
         }
         catch(IOException | FormatException e) {
