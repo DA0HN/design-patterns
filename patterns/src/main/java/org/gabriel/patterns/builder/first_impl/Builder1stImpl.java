@@ -1,4 +1,6 @@
-package org.gabriel.patterns.builder;
+package org.gabriel.patterns.builder.first_impl;
+
+import org.gabriel.patterns.builder.shared_model.Address;
 
 import java.time.LocalDate;
 
@@ -6,7 +8,7 @@ import java.time.LocalDate;
  * @author daohn on 22/08/2020
  * @project design-pattern-course
  */
-public class Client {
+class Builder1stImpl {
 
     public static void main(String[] args) {
         var user = createUser();

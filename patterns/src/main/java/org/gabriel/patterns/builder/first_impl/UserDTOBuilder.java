@@ -1,4 +1,6 @@
-package org.gabriel.patterns.builder;
+package org.gabriel.patterns.builder.first_impl;
+
+import org.gabriel.patterns.builder.shared_model.Address;
 
 import java.time.LocalDate;
 

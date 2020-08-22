@@ -1,4 +1,4 @@
-package org.gabriel.patterns.builder;
+package org.gabriel.patterns.builder.shared_model;
 
 /**
  * @author daohn on 22/08/2020

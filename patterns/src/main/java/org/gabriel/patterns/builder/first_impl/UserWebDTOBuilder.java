@@ -1,4 +1,6 @@
-package org.gabriel.patterns.builder;
+package org.gabriel.patterns.builder.first_impl;
+
+import org.gabriel.patterns.builder.shared_model.Address;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -10,7 +12,7 @@ import java.time.Period;
 
 // The concrete builder for UserWebDTO
 // TODO: implement builder
-public class UserWebDTOBuilder implements UserDTOBuilder {
+class UserWebDTOBuilder implements UserDTOBuilder {
 
     private String firstName;
     private String lastName;

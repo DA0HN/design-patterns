@@ -1,10 +1,10 @@
-package org.gabriel.patterns.builder;
+package org.gabriel.patterns.builder.first_impl;
 
 /**
  * @author daohn on 22/08/2020
  * @project design-pattern-course
  */
-public class UserWebDTO implements UserDTO {
+class UserWebDTO implements UserDTO {
     private String name;
     private String address;
     private String age;
@@ -40,11 +40,11 @@ public class UserWebDTO implements UserDTO {
     }
 
     @Override public String toString() {
-        final StringBuilder sb = new StringBuilder("UserWebDTO{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", address='").append(address).append('\'');
-        sb.append(", age='").append(age).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return new StringBuilder("UserWebDTO{")
+                .append("name='").append(name)
+                .append('\'').append(", address='")
+                .append(address).append('\'')
+                .append(", age='").append(age)
+                .append('\'').append('}').toString();
     }
 }
