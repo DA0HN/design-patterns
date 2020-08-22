@@ -27,6 +27,7 @@
         <module>liskov_substitution</module>
         <module>open_closed</module>
         <module>single_responsibility</module>
+        <module>patterns</module>
     </modules>
     <dependencies>
         <dependency>

@@ -11,7 +11,11 @@
         <module name="single_responsibility" />
         <module name="dependency_inversion" />
         <module name="interface_segregation" />
+        <module name="patterns" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="builder_pattern" target="14" />
+    </bytecodeTargetLevel>
   </component>
 </project>
