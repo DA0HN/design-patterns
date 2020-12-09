@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="liskov_substitution" />
         <module name="open_closed" />
-        <module name="single_responsibility" />
         <module name="dependency_inversion" />
-        <module name="interface_segregation" />
+        <module name="single_responsability" />
         <module name="patterns" />
+        <module name="liskov_substitution" />
+        <module name="single_responsibility" />
+        <module name="interface_segregation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
