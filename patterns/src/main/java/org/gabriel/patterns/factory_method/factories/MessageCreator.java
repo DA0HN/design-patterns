@@ -11,6 +11,11 @@ import org.gabriel.patterns.factory_method.model.Message;
  */
 public abstract class MessageCreator {
 
+    /**
+     * This is called by clients.
+     *
+     * @return A {@link Message}
+     */
     public Message getMessage() {
         Message message = createMessage();
 
@@ -20,6 +25,11 @@ public abstract class MessageCreator {
         return message;
     }
 
-    // Factory Method
+    /**
+     * Subclasses must provide implementation for this & return
+     * a specific Message subclass.
+     *
+     * @return A concrete {@link Message}
+     */
     public abstract Message createMessage();
 }

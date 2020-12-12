@@ -11,7 +11,10 @@ import org.gabriel.patterns.factory_method.factories.TextMessageCreator;
 public class Client {
 
     public static void main(String[] args) {
+        // Using creator to create a product, choice of creator determines
+        // type of product created.
         printMessage(new JSONMessageCreator());
+        // Using another creator to create another product.
         printMessage(new TextMessageCreator());
     }
 
