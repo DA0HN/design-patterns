@@ -1,0 +1,26 @@
+@startuml
+
+abstract class Message {
+    + {abstract} String getContent()
+    + void addDefaultHeaders()
+    + void encrypt()
+}
+class TextMessage
+class JSONMessage
+abstract class MessageCreator {
+    + {abstract} Message createMessage()
+    + Message getMessage()
+}
+class TextMessageCreator
+class JSONMessageCreator
+
+Message  <|-- TextMessage
+Message  <|-- JSONMessage
+
+MessageCreator <|-- TextMessageCreator
+MessageCreator <|-- JSONMessageCreator
+
+JSONMessageCreator ..|> JSONMessage
+TextMessageCreator ..|> TextMessage
+
+@enduml
