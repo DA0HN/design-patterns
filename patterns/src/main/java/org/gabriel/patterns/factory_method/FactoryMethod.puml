@@ -1,0 +1,19 @@
+@startuml
+
+abstract class Message
+class TextMessage
+class JSONMessage
+abstract class MessageCreator
+class TextMessageCreator
+class JSONMessageCreator
+
+Message  <|-- TextMessage
+Message  <|-- JSONMessage
+
+MessageCreator <|-- TextMessageCreator
+MessageCreator <|-- JSONMessageCreator
+
+JSONMessageCreator ..|> JSONMessage
+TextMessageCreator ..|> TextMessage
+
+@enduml
