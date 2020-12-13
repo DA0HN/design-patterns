@@ -1,6 +1,6 @@
 # Factory Method
 
-![FactoryMethod.png](../../../../../resources/FactoryMethod.png)
+![FactoryMethod.png](../../../../../resources/factory_method/FactoryMethod.png)
 
 ### Implementation Considerations
 
