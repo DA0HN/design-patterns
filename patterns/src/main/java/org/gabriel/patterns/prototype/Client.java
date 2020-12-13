@@ -1,6 +1,8 @@
 package org.gabriel.patterns.prototype;
 
 import javafx.geometry.Point3D;
+import org.gabriel.patterns.prototype.model.GameUnit;
+import org.gabriel.patterns.prototype.model.Swordsman;
 
 /**
  * @author daohn on 13/12/2020

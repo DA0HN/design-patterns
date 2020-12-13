@@ -1,4 +1,4 @@
-package org.gabriel.patterns.prototype;
+package org.gabriel.patterns.prototype.model;
 
 /**
  * @author daohn on 13/12/2020

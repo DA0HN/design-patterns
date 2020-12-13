@@ -1,4 +1,4 @@
-package org.gabriel.patterns.prototype;
+package org.gabriel.patterns.prototype.model;
 
 import javafx.geometry.Point3D;
 
