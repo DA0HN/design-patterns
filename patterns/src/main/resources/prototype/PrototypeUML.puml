@@ -1,0 +1,29 @@
+@startuml
+
+note bottom of Prototype: Role - Prototype.\nDeclares abstract\n method for cloning itself.
+note "Role - Client.\nCreates new instance using\n prototype's clone method" as NoteClient
+note "Role - Concrete Prototype.\nImplements cloning method." as NoteConcretePrototype
+
+class Client
+
+class Prototype<<abstract>> {
+    + clone(): Prototype
+}
+class ConcretePrototypeA {
+    + clone(): ConcretePrototypeA
+}
+class ConcretePrototypeB {
+    + clone(): ConcretePrototypeB
+}
+
+Client .. NoteClient
+NoteConcretePrototype .. ConcretePrototypeB
+NoteConcretePrototype .. ConcretePrototypeA
+
+
+Client -right--> Prototype
+ConcretePrototypeA -down--|> Prototype
+ConcretePrototypeB -down--|> Prototype
+
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+
+package "org.gabriel.patterns.prototype" {
+    class Client
+    abstract class GameUnit<<abstract, Prototype>> {
+        + clone(): GameUnit
+        + initialize(): void
+        + resetUnit(): void
+    }
+    class Swordsman {
+        + clone(): Swordsman
+        # resetUnit(): void
+    }
+    class General {
+        + clone(): GameUnit
+        # resetUnit(): void
+    }
+}
+
+GameUnit <|--left Swordsman
+GameUnit <|--right General
+Client --> GameUnit
+
+@enduml
