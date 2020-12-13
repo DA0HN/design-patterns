@@ -1,0 +1,28 @@
+@startuml
+
+note "Role - Handler\n-defines interface for handling requests\n-(optionally) implements link to sucessor" as noteHandler
+note "Role - Client\n-Hands over requests to first object in chain" as noteClient
+note "Role - Concrete Handler\n-Handles requests if it can\n-If can't handle it passes to sucessor" as noteConcreteHandler
+
+class Client
+class Handler {
+    + handleRequest(): void
+}
+class ConcreteHandlerA {
+    + handleRequest(): void
+}
+class ConcreteHandlerB {
+    + handleRequest(): void
+}
+Client  -left.. noteClient
+Handler -left.. noteHandler
+ConcreteHandlerA -down.. noteConcreteHandler
+ConcreteHandlerB -down.. noteConcreteHandler
+
+
+Handler --> Handler : + Sucessor
+Client -down--> Handler
+ConcreteHandlerA -up..|> Handler
+ConcreteHandlerB -up..|> Handler
+
+@enduml
