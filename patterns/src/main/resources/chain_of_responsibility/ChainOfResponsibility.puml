@@ -1,0 +1,39 @@
+@startuml
+
+package "org.gabriel.patterns.chain_of_responsibility" {
+
+    class Client
+    class Leave {
+        - type
+        - noOfDays
+        - status
+        - processedBy
+        - appliedBy
+    }
+    class LeaveApprover <<abstract, handler>>{
+        + processRequest(leave)
+    }
+    abstract class Employee <<abstract>> {
+        + processLeaveApplication(application)
+        + processRequest(leave)
+    }
+    class Lead <<concrete-handler>> {
+        + processLeaveApplication(application)
+    }
+    class Manager <<concrete-handler>> {
+        + processLeaveApplication(application)
+    }
+    class Director <<concrete-handler>> {
+        + processLeaveApplication(application)
+    }
+}
+
+Client -right-> LeaveApprover
+Leave -down-|> LeaveApprover
+LeaveApprover --> LeaveApprover
+Employee -up.|> LeaveApprover
+Lead -up-|> Employee
+Manager -up-|> Employee
+Director -up-|> Employee
+
+@enduml
