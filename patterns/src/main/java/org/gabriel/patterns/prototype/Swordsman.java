@@ -12,7 +12,15 @@ public class Swordsman extends GameUnit {
         this.state = "attacking";
     }
 
+    @Override protected void reset() {
+        this.state = "idle";
+    }
+
+    @Override protected void initialize() {
+        super.initialize();
+    }
+
     @Override public String toString() {
-        return "Swordsman " + this.state + " @ "+ super.getPosition();
+        return "Swordsman " + this.state + " @ " + super.getPosition();
     }
 }
